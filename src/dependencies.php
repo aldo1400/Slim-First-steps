@@ -12,5 +12,10 @@ $container['logger']=function($c){
 $container['view']=function($c){
     $settings=$c->get('settings')['renderer'];
     return new \Slim\Views\PhpRenderer($settings['template_path']);
-}
+};
+
+$container['UserController']=function($c){
+    return new \App\Controllers\UserController($c);
+};
+
 ?>

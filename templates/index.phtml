@@ -30,7 +30,9 @@
     <?php if(isset($name)) :?>
         <h2>Hello <?php echo htmlspecialchars($name); ?>!</h2>
 <?php else: ?>
-        <p>Try<a href="http://www.slimframework.com">Slim Framework</a>
+        <p>Try<a href="http://www.slimframework.com">Slim Framework</a></p>
+
+        <?php echo $path; ?>
 <?php endif; ?>
 
 </body>
