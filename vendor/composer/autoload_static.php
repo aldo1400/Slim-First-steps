@@ -25,6 +25,7 @@ class ComposerStaticInitb45190958fdf71e05fc8c71b7929a55c
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Medoo\\' => 6,
         ),
         'I' => 
         array (
@@ -64,6 +65,10 @@ class ComposerStaticInitb45190958fdf71e05fc8c71b7929a55c
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
         'Interop\\Container\\' => 
         array (

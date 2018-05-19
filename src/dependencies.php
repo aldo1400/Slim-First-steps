@@ -14,8 +14,16 @@ $container['view']=function($c){
     return new \Slim\Views\PhpRenderer($settings['template_path']);
 };
 
+$container['db']=function ($c){
+    $settings=$c->get('settings')['db'];
+    $database=new Medoo\Medoo($settings);
+    return $database;
+};
+
 $container['UserController']=function($c){
     return new \App\Controllers\UserController($c);
 };
+
+
 
 ?>
