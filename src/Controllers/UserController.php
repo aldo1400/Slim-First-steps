@@ -12,6 +12,7 @@ class UserController extends BaseController{
     public function users($request,$response){
         $users=new Users($this->container);
         $all=$users->select('*');
+        // envia los datos a la vista con compact()
         return $this->view->render($response,'users.phtml',compact('all'));
     }
 }
