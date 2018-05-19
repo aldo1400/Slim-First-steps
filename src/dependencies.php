@@ -11,7 +11,9 @@ $container['logger']=function($c){
 
 $container['view']=function($c){
     $settings=$c->get('settings')['renderer'];
-    return new \Slim\Views\PhpRenderer($settings['template_path']);
+    return new \Slim\Views\Blade($settings['template_path'],
+    $settings['cache_path']); 
+    // return new \Slim\Views\PhpRenderer($settings['template_path']);
 };
 
 $container['db']=function ($c){
